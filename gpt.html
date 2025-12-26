@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSeries Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #0f172a;
+            color: white;
+        }
+
+        /* HEADER */
+        header{
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1{
+            color: #38bdf8;
+            font-size: 32px;
+        }
+
+        /* NAVBAR */
+        nav{
+            background: #020617;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover{
+            color: #38bdf8;
+        }
+
+        /* HERO */
+        .hero{
+            height: 300px;
+            background: linear-gradient(to right, #020617, #1e293b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h2{
+            font-size: 36px;
+        }
+
+        /* SERIES SECTION */
+        .series-container{
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card{
+            background: #020617;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+
+        .card:hover{
+            transform: scale(1.05);
+        }
+
+        .card img{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content{
+            padding: 15px;
+        }
+
+        .card-content h3{
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .card-content p{
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* FOOTER */
+        footer{
+            background: #020617;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎥 WebSeries Hub</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Series</a>
+    <a href="#">Genres</a>
+    <a href="#">About</a>
+</nav>
+
+<section class="hero">
+    <h2>Watch Trending Web Series Anytime</h2>
+</section>
+
+<section class="series-container">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Series">
+        <div class="card-content">
+            <h3>Action Blast</h3>
+            <p>A high-energy action series packed with thrilling missions and suspense.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Series">
+        <div class="card-content">
+            <h3>Dark Mystery</h3>
+            <p>An intense mystery web series uncovering dark secrets and hidden truths.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Series">
+        <div class="card-content">
+            <h3>Romantic Tales</h3>
+            <p>A beautiful love story exploring emotions, relationships, and destiny.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Series">
+        <div class="card-content">
+            <h3>Sci-Fi World</h3>
+            <p>A futuristic science fiction series with advanced technology and drama.</p>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    © 2025 WebSeries Hub | All Rights Reserved
+</footer>
+
+</body>
+</html>
